@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const RecommendationModal: React.FC<{ selectedRecommendation: any, closeModal: () => void, setDates: (start: string, end: string) => void }> = ({ selectedRecommendation, closeModal, setDates }) => {
   const [startDate, setStartDate] = useState<string>('');
   const [endDate, setEndDate] = useState<string>('');

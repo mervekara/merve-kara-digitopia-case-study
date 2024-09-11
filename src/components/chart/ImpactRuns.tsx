@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { clearSelectedRecommendationId, setImpactRunId, setRecommendations, setSelectedRecommendationId } from '@/features/recommendationsSlice';
@@ -18,8 +19,6 @@ const ImpactRuns: React.FC<ImpactRunsProps> = ({ setIsPanelMinimized, isPanelMin
   const accessToken = useSelector((state: RootState) => state.auth.accessToken);
   const recommendations = useSelector((state: RootState) => state.recommendations.recommendations);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
-
-  console.log(accessToken);
 
   useEffect(() => {
     const fetchImpactRuns = async () => {
@@ -72,7 +71,6 @@ const ImpactRuns: React.FC<ImpactRunsProps> = ({ setIsPanelMinimized, isPanelMin
   };
 
   const close = () => {
-    console.log("close");
     dispatch(clearSelectedRecommendationId());
     setIsPanelOpen(false)
   }

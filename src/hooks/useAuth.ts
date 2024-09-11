@@ -38,7 +38,5 @@ export const useAuth = () => {
     }
   }, [dispatch, router, locale, accessToken, idToken]);
 
-  console.log(accessToken);
-
   return { accessToken };
 };

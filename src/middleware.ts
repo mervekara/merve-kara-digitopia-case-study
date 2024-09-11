@@ -23,7 +23,6 @@ const middleware = async (req: NextRequest) => {
   }
 
   if (pathname === '/') {
-    console.log('afaf');
     return NextResponse.redirect(redirectUrl);
   }
 

@@ -17,6 +17,7 @@ const RightSidePanel = ({
   onClose: () => void;
 }) => {
   const [selectedRecommendation, setSelectedRecommendation] = useState<
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     any | null
   >(null);
   const [isModalOpen, setIsModalOpen] = useState(false);

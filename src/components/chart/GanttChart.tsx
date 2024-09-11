@@ -6,6 +6,7 @@ import { startOfMonth, endOfYear } from 'date-fns';
 
 const GanttChart = () => {
   const svgRef = useRef(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data: Recommendation[] = useSelector((state: any) => state.recommendations.recommendations);
 
   useEffect(() => {

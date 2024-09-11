@@ -45,6 +45,7 @@ export default function LoginForm({ translations }: LoginFormProps) {
       );
       
       router.push(`/${locale}/home`)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       dispatch(setError(error.message || 'An unknown error occurred.'));
     }

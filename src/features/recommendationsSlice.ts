@@ -25,8 +25,6 @@ export const recommendationsSlice = createSlice({
         recommendation.startDate = action.payload.startDate;
         recommendation.endDate = action.payload.endDate;
       }
-
-      console.log(recommendation);
     },    
     setSelectedRecommendationId: (state, action: PayloadAction<string | null>) => {
         state.selectedRecommendationId = action.payload;
