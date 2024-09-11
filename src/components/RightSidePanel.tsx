@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/store/store";
+import { RootState, AppDispatch } from "@/store/store";
 import { fetchOrganizationDetails } from "@/features/organizationSlice";
 import RecommendationModal from "./chart/RecommendationModal";
 import { usePathname } from "next/navigation";
@@ -28,9 +28,9 @@ const RightSidePanel = ({
     (state: RootState) => state.language.language,
   );
   const userInfo = useSelector((state: RootState) => state.auth.userInfo);
-  const accessToken = useSelector((state: RootState) => state.auth.accessToken);
+  const accessToken = useSelector((state: RootState) => state.auth.accessToken || "");
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const t = useTranslations("Home");
 
   const { organizationName, industryName, countryName, status } = useSelector(
@@ -49,7 +49,7 @@ const RightSidePanel = ({
   useEffect(() => {
     if (isVisible) {
       if (context === "userProfile" || !selectedRecomandationID) {
-        const organizationId = userInfo?.["custom:organizationId"];
+        const organizationId = userInfo?.["custom:organizationId"] || "";
         dispatch(fetchOrganizationDetails({ organizationId, accessToken }));
       } else if (context === "recommendation") {
         recommendations.find((recommendation) => {
