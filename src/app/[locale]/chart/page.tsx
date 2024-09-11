@@ -29,10 +29,10 @@ const ChartScreen = () => {
 
   return (
     <div className="flex flex-col lg:flex-row h-screen p-4 sm:p-6 lg:p-8">
-      <div className={`transition-all ${isPanelMinimized && isDesktop ? 'w-full lg:w-1/6' : 'w-full lg:w-1/3'} mb-4 lg:mb-0`}>
+      <div className={`transition-all ${isPanelMinimized && isDesktop ? 'w-full lg:w-1/6' : 'w-full lg:w-2/5'} mb-4 lg:mb-0`}>
         <ImpactRuns setIsPanelMinimized={setIsPanelMinimized} isPanelMinimized={isPanelMinimized && isDesktop} />
       </div>
-      <div className={`transition-all ${isPanelMinimized && isDesktop ? 'w-full lg:w-5/6' : 'w-full lg:w-2/3'}`}>
+      <div className={`transition-all ${isPanelMinimized && isDesktop ? 'w-full lg:w-5/6' : 'w-full lg:w-3/5'}`}>
         <GanttChart />
       </div>
     </div>
