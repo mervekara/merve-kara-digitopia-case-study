@@ -22,8 +22,13 @@ const middleware = async (req: NextRequest) => {
       return NextResponse.redirect(new URL(redirectUrl, req.url));
   }
 
-  if (pathname === '/') {
+  if (!hasAuthTokens(req) && pathname === '/') {
     return NextResponse.redirect(redirectUrl);
+  }
+
+  if (hasAuthTokens(req) && pathname === '/') {
+    const homeUrl = new URL(`/${locale}/home`, req.url);
+    return NextResponse.redirect(homeUrl);
   }
 
   return createMiddleware({
