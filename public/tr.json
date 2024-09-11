@@ -1,0 +1,43 @@
+{
+    "Home": {
+      "navigation": {
+        "home": "Anasayfa",
+        "chart": "Grafik"
+      },
+      "greeting": "Merhaba {name}!",
+      "goToChart": "Grafiğe Git",
+      "login": {
+        "title": "Giriş Yap",
+        "emailLabel": "E-posta",
+        "passwordLabel": "Şifre",
+        "submitButton": "Giriş"
+      },
+      "organization": {
+        "profile": "Kullanıcı Profili",
+        "name": "Kuruluş: ",
+        "industry": "Sanayi: ",
+        "country": "Ülke: "
+      },
+      "chart": {
+        "recommendations": "Öneriler",
+        "bigBet": "Büyük Bahis",
+        "project": "Proje"
+      },
+      "rightSidePanel": {
+        "close": "Kapat",
+        "loading": "Yükleniyor..."
+      },
+      "recommendationDetail": {
+        "detail": "Öneri Detayları",
+        "capex": "CAPEX",
+        "opex": "OPEX",
+        "size": "Boyut",
+        "duration": "Süre",
+        "add": "+Ekle",
+        "description": "Tanım",
+        "save": "Kaydet",
+        "no": "Hayır",
+        "yes": "Evet"
+      }
+    }
+  }

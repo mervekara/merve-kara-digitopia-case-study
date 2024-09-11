@@ -1,0 +1,43 @@
+{
+    "Home": {
+      "navigation": {
+        "home": "Home",
+        "chart": "Chart"
+      },
+      "greeting": "Hello {name}!",
+      "goToChart": "Go to Chart",
+      "login": {
+        "title": "Login",
+        "emailLabel": "Email",
+        "passwordLabel": "Password",
+        "submitButton": "Login"
+      },
+      "organization": {
+        "profile": "User Profile",
+        "name": "Organization: ",
+        "industry": "Industry: ",
+        "country": "Country: "
+      },
+      "chart": {
+        "recommendations": "Recommendations",
+        "bigBet": "Big Bet",
+        "project": "Project"
+      },
+      "rightSidePanel": {
+        "close": "Close",
+        "loading": "Loading..."
+      },
+      "recommendationDetail": {
+        "detail": "Recommendation Details",
+        "capex": "CAPEX",
+        "opex": "OPEX",
+        "size": "Size",
+        "duration": "Duration",
+        "add": "+Add",
+        "description": "Description",
+        "save": "Save",
+        "no": "No",
+        "yes": "Yes"
+      }
+    }
+  }
