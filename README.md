@@ -48,8 +48,8 @@ This project is a web application that integrates several advanced features, inc
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-repository-url.git
-   cd your-project-directory
+   https://github.com/mervekara/merve-kara-digitopia-case-study.git
+   cd merve-kara-digitopia-case-study
    ```
 
 2. **Install Dependencies**
