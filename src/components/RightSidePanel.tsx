@@ -79,14 +79,16 @@ const RightSidePanel = ({
   };
 
   const handleSave = () => {
-    const updatedRec = {
-      ...selectedRecommendation,
-      startDate: new Date(startDate).toISOString(),
-      endDate: new Date(endDate).toISOString(),
-    };
-
-    dispatch(updateRecommendationDates(updatedRec));
-    onClose();
+    if (startDate && endDate) {
+      const updatedRec = {
+        ...selectedRecommendation,
+        startDate: new Date(startDate).toISOString(),
+        endDate: new Date(endDate).toISOString(),
+      };
+  
+      dispatch(updateRecommendationDates(updatedRec));
+      onClose();
+    }
   };
 
   const handlePanelClose = () => {
