@@ -2,7 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function Navigation() {
-  const t = useTranslations("messages.Home");
+  const t = useTranslations("Home");
   const locale = useLocale();
 
   const navigationKeys = Object.keys(t.raw("navigation"));

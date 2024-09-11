@@ -31,7 +31,7 @@ const RightSidePanel = ({
   const accessToken = useSelector((state: RootState) => state.auth.accessToken);
 
   const dispatch = useDispatch();
-  const t = useTranslations("messages.Home");
+  const t = useTranslations("Home");
 
   const { organizationName, industryName, countryName, status } = useSelector(
     (state: RootState) => state.organization,

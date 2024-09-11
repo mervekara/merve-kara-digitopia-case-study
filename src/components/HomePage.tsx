@@ -8,7 +8,7 @@ import Link from 'next/link'
 const HomePage = () => {
   const locale = useLocale();
   const userInfo = useSelector((state: RootState) => state.auth.userInfo)
-  const t = useTranslations('messages.Home')
+  const t = useTranslations('Home')
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

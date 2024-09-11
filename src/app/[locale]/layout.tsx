@@ -21,7 +21,7 @@ export default async function RootLayout({
   children,
   params,
 }: Readonly<RootLayoutProps>) {
-  const messages = await getRequestConfig({ locale: params.locale});
+  const {messages} = await getRequestConfig({ locale: params.locale});
   
   return (
     <html lang={params.locale}>

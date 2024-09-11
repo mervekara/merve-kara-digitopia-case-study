@@ -14,7 +14,7 @@ interface ImpactRunsProps {
 }
 
 const ImpactRuns: React.FC<ImpactRunsProps> = ({ setIsPanelMinimized, isPanelMinimized }) => {
-  const t = useTranslations("messages.Home");
+  const t = useTranslations("Home");
   const dispatch = useDispatch();
   const accessToken = useSelector((state: RootState) => state.auth.accessToken);
   const recommendations = useSelector((state: RootState) => state.recommendations.recommendations);

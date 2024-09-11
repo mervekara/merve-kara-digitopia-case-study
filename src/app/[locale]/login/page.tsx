@@ -5,7 +5,7 @@ import withAuth from "@/hoc/withAuth";
 import { useTranslations } from "next-intl";
 
 const Login = () => {
-  const t = useTranslations("messages.Home");
+  const t = useTranslations("Home");
 
   const loginTranslations = {
     title: t("login.title"),
